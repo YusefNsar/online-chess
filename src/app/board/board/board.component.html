@@ -1,0 +1,5 @@
+<div class="board-container" [ngClass]="isPlayerTurn ? '' : 'board-container-disabled'">
+  <ngx-chess-board #board [darkTileColor]="'#B58863'" [lightTileColor]="'#F0D9B5'" [size]="boardSize"
+    (moveChange)="onMoveChange($event)">
+  </ngx-chess-board>
+</div>

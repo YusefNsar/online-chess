@@ -1,0 +1,5 @@
+<div class="container">
+  <iframe #iframe1 src="/iframepage" [style.pointerEvents]="isBlackTurn ? 'none' : 'auto'" (load)="loadOnceReady()"></iframe>
+  <iframe #iframe2 src="/iframepage" [style.pointerEvents]="!isBlackTurn ? 'none' : 'auto'" (load)="loadOnceReady()"></iframe>
+  <button (click)="newGame()">Create new game</button>
+</div>

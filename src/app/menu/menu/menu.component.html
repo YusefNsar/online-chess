@@ -1,0 +1,12 @@
+<div class="menu-container">
+  <div class="menu" *ngIf="!gameMode">
+    <button (click)="setGameMode('Online')">
+      Online
+    </button>
+    <button (click)="setGameMode('Local')">
+      Local
+    </button>
+  </div>
+
+  <app-local *ngIf="gameMode === 'Local'"></app-local>
+</div>

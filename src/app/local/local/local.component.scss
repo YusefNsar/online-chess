@@ -1,0 +1,15 @@
+:host {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+iframe {
+  width: 45%;
+  height: 600px;
+  border: 1px solid #ccc;
+}
